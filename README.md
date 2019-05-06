@@ -9,7 +9,9 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of gh3 is to …
+The goal of gh3 is to provide easy acccess to the [Github API
+V3](https://developer.github.com/v3/). The entire API is accessible via
+R functions that autocomplete.
 
 ## Installation
 
@@ -26,32 +28,17 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(gh3)
-## basic example code
+gh_users_get_repos('ramnathv')
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## Implementation
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+The entire package including all functions and documentation are
+automatically generated from an unofficial [swagger
+specification](https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml)
+of the Github API. If you are curious, you can read the script
+generating the package:
+[data\_raw/generate\_package.R](data_raw/generate_package.R)
 
 ## Code of Conduct
 

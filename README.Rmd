@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-The goal of gh3 is to ...
+The goal of gh3 is to provide easy acccess to the [Github API V3](https://developer.github.com/v3/). The entire API is accessible via R functions that autocomplete.
 
 ## Installation
 
@@ -32,26 +32,14 @@ remotes::install_github('ramnathv/gh3')
 
 This is a basic example which shows you how to solve a common problem:
 
-```{r example}
+```{r example, eval = FALSE}
 library(gh3)
-## basic example code
+gh_users_get_repos('ramnathv')
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Implementation
 
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+The entire package including all functions and documentation are automatically generated from an unofficial [swagger specification](https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml) of the Github API. If you are curious, you can read the script generating the package:  [data_raw/generate_package.R](data_raw/generate_package.R) 
 
 ## Code of Conduct
 
