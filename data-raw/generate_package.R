@@ -1,6 +1,7 @@
 #' Get unofficial swagger spec for Github API ----
-url_api <- 'https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml'
-gh_api_spec <- yaml::read_yaml(url_api)
+# url_api <- 'https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml'
+# gh_api_spec <- yaml::read_yaml(url_api)
+# yaml::write_yaml(gh_api_spec, 'data-raw/gh_api_spec.yml')
 
 #' Utility functions ----
 to_df <- function(p){
@@ -81,6 +82,8 @@ make_function_with_docs <- function(r){
   fun <- paste0('gh_', r$func)
   glue::glue(doc_template)
 }
+
+gh_api_spec <- yaml::read_yaml('data-raw/gh_api_spec.yml')
 
 # Transform API spec into a list that can be passed to make_function_docs
 api <- gh_api_spec$paths %>% 
