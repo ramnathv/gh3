@@ -1,4 +1,27 @@
-tpl <- "#' {title}
+#' Get unofficial swagger spec for Github API ----
+url_api <- 'https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml'
+gh_api_spec <- yaml::read_yaml(url_api)
+
+#' Utility functions ----
+to_df <- function(p){
+  p_names <- names(p)
+  p_description <- p %>% map_chr('description')
+  p_parameters <- p %>% 
+    map(~ {
+      .x$parameters %>% 
+        map(~ {.x$enum <- NULL; as_tibble(.x)}) %>% 
+        bind_rows()
+    })
+  tibble(
+    verb = p_names,
+    description = p_description,
+    parameters = p_parameters
+  )
+}
+
+
+# Create function with roxygen docs ----
+doc_template <- "#' {title}
 #' 
 {description}
 #'
@@ -56,28 +79,10 @@ make_function_with_docs <- function(r){
   }
     
   fun <- paste0('gh_', r$func)
-  glue::glue(tpl)
+  glue::glue(doc_template)
 }
 
-to_df <- function(p){
-  p_names <- names(p)
-  p_description <- p %>% map_chr('description')
-  p_parameters <- p %>% 
-    map(~ {
-      .x$parameters %>% 
-        map(~ {.x$enum <- NULL; as_tibble(.x)}) %>% 
-        bind_rows()
-    })
-  tibble(
-    verb = p_names,
-    description = p_description,
-    parameters = p_parameters
-  )
-}
-
-url_api <- 'https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml'
-gh_api_spec <- yaml::read_yaml(url_api)
-
+# Transform API spec into a list that can be passed to make_function_docs
 api <- gh_api_spec$paths %>% 
   map(to_df) %>% 
   bind_rows(.id = 'endpoint') %>% 
@@ -104,16 +109,15 @@ api <- gh_api_spec$paths %>%
     into = c('title', 'long_description'), 
     sep = '\n', 
     extra = 'merge', remove = FALSE
-  )
-
-api_l <- api %>% 
+  ) %>% 
   transpose()
 
 
+# Generate functions and save it to the package
 api_l %>% 
   map_chr(make_function_with_docs) %>% 
   paste(collapse = "\n\n") %>% 
   cat(file = 'R/gh3.R')
 
-
+# Generate documentation
 devtools::document()
