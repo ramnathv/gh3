@@ -40,6 +40,12 @@ of the Github API. If you are curious, you can read the script
 generating the package:
 [data\_raw/generate\_package.R](data_raw/generate_package.R)
 
+## TODOs
+
+  - \[ \] Revisit naming conventions for functions.
+  - \[ \] Add `@family` and `@seealso` based on base path.
+  - \[ \] Handle 3 cases where function name is duplicated.
+
 ## Code of Conduct
 
 Please note that the ‘gh3’ project is released with a [Contributor Code
