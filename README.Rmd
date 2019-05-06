@@ -30,7 +30,7 @@ remotes::install_github('ramnathv/gh3')
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+You can get a list of all repos belonging to a user:
 
 ```{r example, eval = FALSE}
 library(gh3)
