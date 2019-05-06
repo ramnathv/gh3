@@ -38,7 +38,7 @@ automatically generated from an unofficial [swagger
 specification](https://api.apis.guru/v2/specs/github.com/v3/swagger.yaml)
 of the Github API. If you are curious, you can read the script
 generating the package:
-[data\_raw/generate\_package.R](data_raw/generate_package.R)
+[data\_raw/generate\_package.R](https://github.com/ramnathv/gh3/blob/master/data-raw/generate_package.R)
 
 ## TODOs
 
