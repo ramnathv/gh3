@@ -4,9 +4,9 @@
 \name{gh3-package}
 \alias{gh3}
 \alias{gh3-package}
-\title{gh3: What the Package Does (One Line, Title Case)}
+\title{gh3: Access Github API V3}
 \description{
-What the package does (one paragraph).
+Access Github API V3.
 }
 \seealso{
 Useful links:
