@@ -15,16 +15,17 @@ knitr::opts_chunk$set(
 # gh3
 
 <!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
 The goal of gh3 is to ...
 
 ## Installation
 
-You can install the released version of gh3 from [CRAN](https://CRAN.R-project.org) with:
+You can install the development version of gh3 from [github](http://github.com/ramnathv/gh3) with:
 
 ``` r
-install.packages("gh3")
+remotes::install_github('ramnathv/gh3')
 ```
 
 ## Example
@@ -51,3 +52,9 @@ plot(pressure)
 ```
 
 In that case, don't forget to commit and push the resulting figure files, so they display on GitHub!
+
+## Code of Conduct
+
+Please note that the 'gh3' project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md).
+By contributing to this project, you agree to abide by its terms.
