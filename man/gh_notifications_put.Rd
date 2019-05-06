@@ -9,9 +9,17 @@ gh_notifications_put(body, ...)
 \arguments{
 \item{body}{body}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Marking a notification as "read" removes it from the default view on
 GitHub.com.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

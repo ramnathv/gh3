@@ -11,9 +11,17 @@ gh_orgs_delete_members_by_username(org, username, ...)
 
 \item{username}{Name of the user.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Removing a user from this list will remove them from all teams and they will no
 longer have any access to the organization's repositories.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

@@ -9,8 +9,16 @@ gh_orgs_get_repos(org, ...)
 \arguments{
 \item{org}{Name of organisation.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 List repositories for the specified org.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

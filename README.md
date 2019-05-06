@@ -45,6 +45,8 @@ generating the package:
   - \[ \] Revisit naming conventions for functions.
   - \[ \] Add `@family` and `@seealso` based on base path.
   - \[ \] Handle 3 cases where function name is duplicated.
+  - \[ \] Set argument defaults based on swagger spec.
+  - \[ \] Add documentation on additional parameters.
 
 ## Code of Conduct
 

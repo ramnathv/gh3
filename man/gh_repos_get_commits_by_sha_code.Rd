@@ -13,8 +13,16 @@ gh_repos_get_commits_by_sha_code(owner, repo, shaCode, ...)
 
 \item{shaCode}{SHA-1 code of the commit.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Get a single commit.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

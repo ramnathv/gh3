@@ -13,10 +13,18 @@ gh_repos_post_git_trees(owner, repo, body, ...)
 
 \item{body}{body}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 The tree creation API will take nested entries as well. If both a tree and a
 nested path modifying that tree are specified, it will overwrite the contents
 of that tree with the new path contents and write a new tree out.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

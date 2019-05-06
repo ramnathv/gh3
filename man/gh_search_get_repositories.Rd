@@ -19,8 +19,16 @@ searches to a specific user or repository. 'Languages' Searches repositories
 based on the language they are written in. 'Stars' Searches repositories based
 on the number of stars.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Search repositories.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

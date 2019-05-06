@@ -15,8 +15,16 @@ gh_repos_get_compare_by_base_id_head_id(owner, repo, baseId, headId, ...)
 
 \item{headId}{headId}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Compare two commits
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

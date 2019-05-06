@@ -13,11 +13,19 @@ gh_repos_get_git_blobs_by_sha_code(owner, repo, shaCode, ...)
 
 \item{shaCode}{SHA-1 code.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Since blobs can be any arbitrary binary data, the input and responses for the
 blob API takes an encoding parameter that can be either utf-8 or base64. If
 your data cannot be losslessly sent as a UTF-8 string, you can base64 encode
 it.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

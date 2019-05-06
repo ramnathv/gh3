@@ -13,7 +13,7 @@ gh_repos_get_commits_status(owner, repo, ref, ...)
 
 \item{ref}{ref}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 The Combined status endpoint is currently available for developers to preview.
@@ -21,4 +21,12 @@ During the preview period, the API may change without advance notice. Please
 see the blog post for full details. To access this endpoint during the preview
 period, you must provide a custom media type in the Accept header:
 application/vnd.github.she-hulk-preview+json
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

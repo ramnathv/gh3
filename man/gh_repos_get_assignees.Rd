@@ -11,9 +11,17 @@ gh_repos_get_assignees(owner, repo, ...)
 
 \item{repo}{Name of repository.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 This call lists all the available assignees (owner + collaborators) to which
 issues may be assigned.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

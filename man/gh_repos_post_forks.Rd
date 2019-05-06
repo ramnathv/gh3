@@ -13,10 +13,18 @@ gh_repos_post_forks(owner, repo, body, ...)
 
 \item{body}{body}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Forking a Repository happens asynchronously. Therefore, you may have to wai a
 short period before accessing the git objects. If this takes longer than 5
 minutes, be sure to contact Support.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

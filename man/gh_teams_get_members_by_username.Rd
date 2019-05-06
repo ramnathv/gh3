@@ -11,9 +11,17 @@ gh_teams_get_members_by_username(teamId, username, ...)
 
 \item{username}{Name of a member.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Get team member. In order to get if a user is a member of a team, the
 authenticated user mus be a member of the team.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

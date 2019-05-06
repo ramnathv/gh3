@@ -9,7 +9,7 @@ gh_orgs_get_members(org, ...)
 \arguments{
 \item{org}{Name of organisation.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 List all users who are members of an organization. A member is a user tha
@@ -17,4 +17,12 @@ belongs to at least 1 team in the organization. If the authenticated user is
 also an owner of this organization then both concealed and public members will
 be returned. If the requester is not an owner of the organization the query
 will be redirected to the public members list.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

@@ -11,9 +11,17 @@ gh_repos_get_stats_code_frequency(owner, repo, ...)
 
 \item{repo}{Name of repository.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Returns a weekly aggregate of the number of additions and deletions pushed to a
 repository.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

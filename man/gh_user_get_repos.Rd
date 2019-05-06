@@ -7,9 +7,17 @@
 gh_user_get_repos(...)
 }
 \arguments{
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 repositories owned by organizations which the user can access. You can lis user
 organizations and list organization repositories separately.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

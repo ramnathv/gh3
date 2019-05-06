@@ -11,7 +11,7 @@ gh_repos_get_stats_punch_card(owner, repo, ...)
 
 \item{repo}{Name of repository.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Each array contains the day number, hour number, and number of commits 0-6
@@ -21,4 +21,11 @@ Sunday - Saturday 0-23 Hour of day Number of commits
 For example, \link{2, 14, 25} indicates that there were 25 total commits, during the
 2.00pm hour on Tuesdays. All times are based on the time zone of individual
 commits.
+
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

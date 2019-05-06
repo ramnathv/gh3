@@ -11,7 +11,7 @@ gh_teams_put_memberships_by_username(teamId, username, ...)
 
 \item{username}{Name of a member.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 In order to add a membership between a user and a team, the authenticated user
@@ -29,4 +29,11 @@ invitation to the user via email. This newly-created membership will be in the
 'pending' state until the user accepts the invitation, at which point the
 membership will transition to the 'active' state and the user will be added as
 a member of the team.
+
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

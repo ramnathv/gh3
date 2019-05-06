@@ -7,10 +7,18 @@
 gh_user_get_keys(...)
 }
 \arguments{
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Lists the current user's keys. Management of public keys via the API requires
 that you are authenticated through basic auth, or OAuth with the 'user',
 'write:public_key' scopes.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

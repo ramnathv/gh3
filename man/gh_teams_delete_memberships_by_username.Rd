@@ -11,11 +11,19 @@ gh_teams_delete_memberships_by_username(teamId, username, ...)
 
 \item{username}{Name of a member.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 In order to remove a membership between a user and a team, the authenticated
 user must have 'admin' permissions to the team or be an owner of the
 organization that the team is associated with. NOTE: This does not delete the
 user, it just removes their membership from the team.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

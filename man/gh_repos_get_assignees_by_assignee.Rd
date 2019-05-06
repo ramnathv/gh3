@@ -13,8 +13,16 @@ gh_repos_get_assignees_by_assignee(owner, repo, assignee, ...)
 
 \item{assignee}{Login of the assignee.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 You may also check to see if a particular user is an assignee for a repository.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

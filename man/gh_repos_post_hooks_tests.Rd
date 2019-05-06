@@ -13,11 +13,19 @@ gh_repos_post_hooks_tests(owner, repo, hookId, ...)
 
 \item{hookId}{Id of hook.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 This will trigger the hook with the latest push to the current repository if
 the hook is subscribed to push events. If the hook is not subscribed to push
 events, the server will respond with 204 but no test POST will be generated.
 Note: Previously /repos/:owner/:repo/hooks/:id/tes
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

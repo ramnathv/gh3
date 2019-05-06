@@ -11,11 +11,19 @@ gh_repos_get_collaborators(owner, repo, ...)
 
 \item{repo}{Name of repository.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 When authenticating as an organization owner of an organization-owned
 repository, all organization owners are included in the list of collaborators.
 Otherwise, only users with access to the repository are returned in the
 collaborators list.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

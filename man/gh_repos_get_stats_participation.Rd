@@ -11,8 +11,16 @@ gh_repos_get_stats_participation(owner, repo, ...)
 
 \item{repo}{Name of repository.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Get the weekly commit count for the repo owner and everyone else.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

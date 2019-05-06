@@ -13,8 +13,16 @@ gh_repos_delete_issues_comments_by_comment_id(owner, repo, commentId, ...)
 
 \item{commentId}{ID of comment.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Delete a comment.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

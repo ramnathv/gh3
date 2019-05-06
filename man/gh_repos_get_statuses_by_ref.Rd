@@ -14,8 +14,16 @@ gh_repos_get_statuses_by_ref(owner, repo, ref, ...)
 \item{ref}{Ref to list the statuses from. It can be a SHA, a branch name, or a tag
 name.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 List Statuses for a specific Ref.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

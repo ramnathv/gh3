@@ -13,7 +13,7 @@ gh_repos_get_contents_by_path(owner, repo, path, ...)
 
 \item{path}{path}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 This method returns the contents of a file or directory in a repository. Files
@@ -21,4 +21,12 @@ and symlinks support a custom media type for getting the raw content.
 Directories and submodules do not support custom media types. Note: This API
 supports files up to 1 megabyte in size. Here can be many outcomes. For details
 see "http://developer.github.com/v3/repos/contents/"
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

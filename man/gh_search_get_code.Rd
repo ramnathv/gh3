@@ -17,8 +17,16 @@ files that match a certain size (in bytes). 'Path' Specifies the path that the
 resulting file must be at. 'Extension' Matches files with a certain extension.
 'Users' or 'Repositories' Limits searches to a specific user or repository.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Search code.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

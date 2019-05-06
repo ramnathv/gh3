@@ -10,7 +10,15 @@ to_df <- function(p){
   p_parameters <- p %>% 
     map(~ {
       .x$parameters %>% 
-        map(~ {.x$enum <- NULL; as_tibble(.x)}) %>% 
+        map(~ {
+          enum <- .x$enum
+          .x$enum <- NULL 
+          .x <- as_tibble(.x)
+          if (!is.null(enum)) {
+            .x$enum <- list(enum)
+          }
+          .x
+        }) %>% 
         bind_rows()
     })
   tibble(
@@ -27,14 +35,62 @@ doc_template <- "#' {title}
 {description}
 #'
 {params} 
+#' @details
+{details}
 #' @export
 {fun} <- function({args}){{
   endpoint = '{endpoint}'
   gh::gh(endpoint = endpoint, {args_call})           
 }}"
 
+make_details <- function(p){
+  if ('required' %in% names(p)){
+    p %>% 
+      filter(is.na(required) | !required) %>% 
+      mutate(description = coalesce(description, '')) 
+  } else {
+    p %>% 
+      mutate(description = coalesce(description, '')) 
+  }
+  
+  if (!is.null(p2$enum)){
+    p2 %>% 
+      mutate(values = map2(enum, default, ~ {
+        l <- if (!is.null(.x)){
+          sprintf("It takes values in: %s.", paste(.x, collapse = ", "))
+        } else {
+          ""
+        }
+        m <- if (!is.na(.y)){
+          sprintf("The default is: %s", .y)
+        } else {
+          ""
+        }
+        paste(c(l, m), collapse = " ")
+      })) %>% 
+      mutate(description = map2(
+        description, values, paste, collapse = "."
+      )) %>% 
+      select(title = name, description = description) %>% 
+      mutate(description = map2_chr(description, title, ~ {
+        d <- sprintf('\\item{%s}{%s}', .y, .x)
+        d %>% 
+          paste(collapse = "\n") %>% 
+          strwrap(width = 80) %>% 
+          paste("#'", .) %>% 
+          paste(collapse = "\n")
+      })) %>% 
+      pull(description) %>% 
+      paste(collapse = "\n") %>% 
+      sprintf("#' Additional parameters that can be passed:\n#' \\describe{\n%s\n#' }\n", .)
+  } else {
+    ""
+  }
+}
+
 make_function_with_docs <- function(r){
   endpoint <- paste(toupper(r$verb), r$endpoint)
+  additional_params <- "... Additional parameters to pass to \\code{\\link[gh]{gh}}. See details."
   if ('required' %in% colnames(r$parameters)){
     params <- r$parameters %>% 
       filter(required) %>% 
@@ -42,7 +98,7 @@ make_function_with_docs <- function(r){
       mutate(doc = map2(name, description, paste)) %>% 
       mutate(doc = stringr::str_replace_all(doc, fixed("@"), "@@")) %>% 
       pull(doc) %>% 
-      c("... Additional parameters to pass to gh::gh.") %>% 
+      c(additional_params) %>% 
       map(strwrap, width = 80) %>% 
       map_chr(~ {
         f <- paste("#' @param", .x[1])
@@ -65,11 +121,12 @@ make_function_with_docs <- function(r){
     args <- c(args, "...") %>% 
       paste(collapse = ", ")
   } else {
-    params <- "#' @param ... Additional parameters to pass to gh::gh."
+    params <- paste("#' @param", additional_params)
     args <- "..."
     args_call <- "..."
   }
   title <- r$title
+  details <- make_details(r$parameters)
   description <- if (is.na(r$long_description)){
      "#' " 
   } else {
@@ -85,6 +142,7 @@ make_function_with_docs <- function(r){
 
 gh_api_spec <- yaml::read_yaml('data-raw/gh_api_spec.yml')
 
+library(tidyverse)
 # Transform API spec into a list that can be passed to make_function_docs
 api <- gh_api_spec$paths %>% 
   map(to_df) %>% 
@@ -117,7 +175,7 @@ api <- gh_api_spec$paths %>%
 
 
 # Generate functions and save it to the package
-api_l %>% 
+api %>% 
   map_chr(make_function_with_docs) %>% 
   paste(collapse = "\n\n") %>% 
   cat(file = 'R/gh3.R')

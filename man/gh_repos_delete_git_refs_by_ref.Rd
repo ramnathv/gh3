@@ -13,10 +13,18 @@ gh_repos_delete_git_refs_by_ref(owner, repo, ref, ...)
 
 \item{ref}{ref}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Example: Deleting a branch: DELETE
 /repos/octocat/Hello-World/git/refs/heads/feature-a Example: Deleting a tag:
 DELETE /repos/octocat/Hello-World/git/refs/tags/v1.0
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

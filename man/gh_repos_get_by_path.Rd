@@ -15,7 +15,7 @@ gh_repos_get_by_path(owner, repo, archive_format, path, ...)
 
 \item{path}{Valid Git reference, defaults to 'master'.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 This method will return a 302 to a URL to download a tarball or zipball archive
@@ -23,4 +23,12 @@ for a repository. Please make sure your HTTP framework is configured to follow
 redirects or you will need to use the Location header to make a second GET
 request. Note: For private repositories, these links are temporary and expire
 quickly.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

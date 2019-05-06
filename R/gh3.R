@@ -2,7 +2,15 @@
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_emojis_get <- function(...){
   endpoint = 'GET /emojis'
@@ -13,7 +21,15 @@ gh_emojis_get <- function(...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_events_get <- function(...){
   endpoint = 'GET /events'
@@ -25,7 +41,15 @@ gh_events_get <- function(...){
 #' GitHub provides several timeline resources in Atom format. The Feeds API lists
 #' all the feeds available to the authenticating user.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_feeds_get <- function(...){
   endpoint = 'GET /feeds'
@@ -36,7 +60,15 @@ gh_feeds_get <- function(...){
 #' 
 #' return all public gists.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get <- function(...){
   endpoint = 'GET /gists'
@@ -48,7 +80,15 @@ gh_gists_get <- function(...){
 #' 
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_post <- function(body, ...){
   endpoint = 'POST /gists'
@@ -59,7 +99,15 @@ gh_gists_post <- function(body, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get_public <- function(...){
   endpoint = 'GET /gists/public'
@@ -70,7 +118,15 @@ gh_gists_get_public <- function(...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get_starred <- function(...){
   endpoint = 'GET /gists/starred'
@@ -82,7 +138,15 @@ gh_gists_get_starred <- function(...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_delete_by_id <- function(id, ...){
   endpoint = 'DELETE /gists/:id'
@@ -94,7 +158,15 @@ gh_gists_delete_by_id <- function(id, ...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get_by_id <- function(id, ...){
   endpoint = 'GET /gists/:id'
@@ -107,7 +179,15 @@ gh_gists_get_by_id <- function(id, ...){
 #'
 #' @param id Id of gist.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_patch_by_id <- function(id, body, ...){
   endpoint = 'PATCH /gists/:id'
@@ -119,7 +199,15 @@ gh_gists_patch_by_id <- function(id, body, ...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get_comments <- function(id, ...){
   endpoint = 'GET /gists/:id/comments'
@@ -132,7 +220,15 @@ gh_gists_get_comments <- function(id, ...){
 #'
 #' @param id Id of gist.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_post_comments <- function(id, body, ...){
   endpoint = 'POST /gists/:id/comments'
@@ -145,7 +241,15 @@ gh_gists_post_comments <- function(id, body, ...){
 #'
 #' @param id Id of gist.
 #' @param commentId Id of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_delete_comments_by_comment_id <- function(id, commentId, ...){
   endpoint = 'DELETE /gists/:id/comments/:commentId'
@@ -158,7 +262,15 @@ gh_gists_delete_comments_by_comment_id <- function(id, commentId, ...){
 #'
 #' @param id Id of gist.
 #' @param commentId Id of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get_comments_by_comment_id <- function(id, commentId, ...){
   endpoint = 'GET /gists/:id/comments/:commentId'
@@ -172,7 +284,15 @@ gh_gists_get_comments_by_comment_id <- function(id, commentId, ...){
 #' @param id Id of gist.
 #' @param commentId Id of comment.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_patch_comments_by_comment_id <- function(id, commentId, body, ...){
   endpoint = 'PATCH /gists/:id/comments/:commentId'
@@ -184,7 +304,15 @@ gh_gists_patch_comments_by_comment_id <- function(id, commentId, body, ...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_post_forks <- function(id, ...){
   endpoint = 'POST /gists/:id/forks'
@@ -196,7 +324,15 @@ gh_gists_post_forks <- function(id, ...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_delete_star <- function(id, ...){
   endpoint = 'DELETE /gists/:id/star'
@@ -208,7 +344,15 @@ gh_gists_delete_star <- function(id, ...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_get_star <- function(id, ...){
   endpoint = 'GET /gists/:id/star'
@@ -220,7 +364,15 @@ gh_gists_get_star <- function(id, ...){
 #' 
 #'
 #' @param id Id of gist.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gists_put_star <- function(id, ...){
   endpoint = 'PUT /gists/:id/star'
@@ -231,7 +383,15 @@ gh_gists_put_star <- function(id, ...){
 #' 
 #' List all templates available to pass as an option when creating a repository.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gitignore_get_templates <- function(...){
   endpoint = 'GET /gitignore/templates'
@@ -243,7 +403,15 @@ gh_gitignore_get_templates <- function(...){
 #' 
 #'
 #' @param language language
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_gitignore_get_templates_by_language <- function(language, ...){
   endpoint = 'GET /gitignore/templates/:language'
@@ -260,7 +428,15 @@ gh_gitignore_get_templates_by_language <- function(language, ...){
 #' @param labels String list of comma separated Label names. Example - bug,ui,@@high.
 #' @param sort sort
 #' @param direction direction
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_issues_get <- function(filter, state, labels, sort, direction, ...){
   endpoint = 'GET /issues'
@@ -276,7 +452,15 @@ gh_issues_get <- function(filter, state, labels, sort, direction, ...){
 #' closed.
 #' @param owner owner
 #' @param repository repository
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_legacy_get_issues_search_by_keyword <- function(keyword, state, owner, repository, ...){
   endpoint = 'GET /legacy/issues/search/:owner/:repository/:state/:keyword'
@@ -288,7 +472,15 @@ gh_legacy_get_issues_search_by_keyword <- function(keyword, state, owner, reposi
 #' 
 #'
 #' @param keyword The search term
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_legacy_get_repos_search_by_keyword <- function(keyword, ...){
   endpoint = 'GET /legacy/repos/search/:keyword'
@@ -300,7 +492,15 @@ gh_legacy_get_repos_search_by_keyword <- function(keyword, ...){
 #' 
 #'
 #' @param email The email address
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_legacy_get_user_email_by_email <- function(email, ...){
   endpoint = 'GET /legacy/user/email/:email'
@@ -312,7 +512,15 @@ gh_legacy_get_user_email_by_email <- function(email, ...){
 #' 
 #'
 #' @param keyword The search term
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_legacy_get_user_search_by_keyword <- function(keyword, ...){
   endpoint = 'GET /legacy/user/search/:keyword'
@@ -324,7 +532,15 @@ gh_legacy_get_user_search_by_keyword <- function(keyword, ...){
 #' 
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_markdown_post <- function(body, ...){
   endpoint = 'POST /markdown'
@@ -335,7 +551,15 @@ gh_markdown_post <- function(body, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_markdown_post_raw <- function(...){
   endpoint = 'POST /markdown/raw'
@@ -346,7 +570,15 @@ gh_markdown_post_raw <- function(...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_meta_get <- function(...){
   endpoint = 'GET /meta'
@@ -359,7 +591,15 @@ gh_meta_get <- function(...){
 #'
 #' @param owner Name of the owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_networks_get_events <- function(owner, repo, ...){
   endpoint = 'GET /networks/:owner/:repo/events'
@@ -370,7 +610,15 @@ gh_networks_get_events <- function(owner, repo, ...){
 #' 
 #' List all notifications for the current user, grouped by repository.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_get <- function(...){
   endpoint = 'GET /notifications'
@@ -383,7 +631,15 @@ gh_notifications_get <- function(...){
 #' GitHub.com.
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_put <- function(body, ...){
   endpoint = 'PUT /notifications'
@@ -395,7 +651,15 @@ gh_notifications_put <- function(body, ...){
 #' 
 #'
 #' @param id Id of thread.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_get_threads_by_id <- function(id, ...){
   endpoint = 'GET /notifications/threads/:id'
@@ -407,7 +671,15 @@ gh_notifications_get_threads_by_id <- function(id, ...){
 #' 
 #'
 #' @param id Id of thread.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_patch_threads_by_id <- function(id, ...){
   endpoint = 'PATCH /notifications/threads/:id'
@@ -419,7 +691,15 @@ gh_notifications_patch_threads_by_id <- function(id, ...){
 #' 
 #'
 #' @param id Id of thread.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_delete_threads_subscription <- function(id, ...){
   endpoint = 'DELETE /notifications/threads/:id/subscription'
@@ -431,7 +711,15 @@ gh_notifications_delete_threads_subscription <- function(id, ...){
 #' 
 #'
 #' @param id Id of thread.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_get_threads_subscription <- function(id, ...){
   endpoint = 'GET /notifications/threads/:id/subscription'
@@ -447,7 +735,15 @@ gh_notifications_get_threads_subscription <- function(id, ...){
 #'
 #' @param id Id of thread.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_notifications_put_threads_subscription <- function(id, body, ...){
   endpoint = 'PUT /notifications/threads/:id/subscription'
@@ -459,7 +755,15 @@ gh_notifications_put_threads_subscription <- function(id, body, ...){
 #' 
 #'
 #' @param org Name of organisation.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_by_org <- function(org, ...){
   endpoint = 'GET /orgs/:org'
@@ -472,7 +776,15 @@ gh_orgs_get_by_org <- function(org, ...){
 #'
 #' @param org Name of organisation.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_patch_by_org <- function(org, body, ...){
   endpoint = 'PATCH /orgs/:org'
@@ -484,7 +796,15 @@ gh_orgs_patch_by_org <- function(org, body, ...){
 #' 
 #'
 #' @param org Name of organisation.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_events <- function(org, ...){
   endpoint = 'GET /orgs/:org/events'
@@ -502,7 +822,15 @@ gh_orgs_get_events <- function(org, ...){
 #' @param labels String list of comma separated Label names. Example - bug,ui,@@high.
 #' @param sort sort
 #' @param direction direction
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_issues <- function(org, filter, state, labels, sort, direction, ...){
   endpoint = 'GET /orgs/:org/issues'
@@ -518,7 +846,15 @@ gh_orgs_get_issues <- function(org, filter, state, labels, sort, direction, ...)
 #' will be redirected to the public members list.
 #'
 #' @param org Name of organisation.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_members <- function(org, ...){
   endpoint = 'GET /orgs/:org/members'
@@ -532,7 +868,15 @@ gh_orgs_get_members <- function(org, ...){
 #'
 #' @param org Name of organisation.
 #' @param username Name of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_delete_members_by_username <- function(org, username, ...){
   endpoint = 'DELETE /orgs/:org/members/:username'
@@ -545,7 +889,15 @@ gh_orgs_delete_members_by_username <- function(org, username, ...){
 #'
 #' @param org Name of organisation.
 #' @param username Name of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_members_by_username <- function(org, username, ...){
   endpoint = 'GET /orgs/:org/members/:username'
@@ -558,7 +910,15 @@ gh_orgs_get_members_by_username <- function(org, username, ...){
 #' not.
 #'
 #' @param org Name of organisation.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_public_members <- function(org, ...){
   endpoint = 'GET /orgs/:org/public_members'
@@ -571,7 +931,15 @@ gh_orgs_get_public_members <- function(org, ...){
 #'
 #' @param org Name of organisation.
 #' @param username Name of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_delete_public_members_by_username <- function(org, username, ...){
   endpoint = 'DELETE /orgs/:org/public_members/:username'
@@ -584,7 +952,15 @@ gh_orgs_delete_public_members_by_username <- function(org, username, ...){
 #'
 #' @param org Name of organisation.
 #' @param username Name of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_public_members_by_username <- function(org, username, ...){
   endpoint = 'GET /orgs/:org/public_members/:username'
@@ -597,7 +973,15 @@ gh_orgs_get_public_members_by_username <- function(org, username, ...){
 #'
 #' @param org Name of organisation.
 #' @param username Name of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_put_public_members_by_username <- function(org, username, ...){
   endpoint = 'PUT /orgs/:org/public_members/:username'
@@ -609,7 +993,15 @@ gh_orgs_put_public_members_by_username <- function(org, username, ...){
 #' 
 #'
 #' @param org Name of organisation.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_repos <- function(org, ...){
   endpoint = 'GET /orgs/:org/repos'
@@ -622,7 +1014,15 @@ gh_orgs_get_repos <- function(org, ...){
 #'
 #' @param org Name of organisation.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_post_repos <- function(org, body, ...){
   endpoint = 'POST /orgs/:org/repos'
@@ -634,7 +1034,15 @@ gh_orgs_post_repos <- function(org, body, ...){
 #' 
 #'
 #' @param org Name of organisation.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_get_teams <- function(org, ...){
   endpoint = 'GET /orgs/:org/teams'
@@ -648,7 +1056,15 @@ gh_orgs_get_teams <- function(org, ...){
 #'
 #' @param org Name of organisation.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_orgs_post_teams <- function(org, body, ...){
   endpoint = 'POST /orgs/:org/teams'
@@ -659,7 +1075,15 @@ gh_orgs_post_teams <- function(org, body, ...){
 #' 
 #' Note: Accessing this endpoint does not count against your rate limit.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_rate_limit_get <- function(...){
   endpoint = 'GET /rate_limit'
@@ -673,7 +1097,15 @@ gh_rate_limit_get <- function(...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_by_repo <- function(owner, repo, ...){
   endpoint = 'DELETE /repos/:owner/:repo'
@@ -686,7 +1118,15 @@ gh_repos_delete_by_repo <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_by_repo <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo'
@@ -700,7 +1140,15 @@ gh_repos_get_by_repo <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_by_repo <- function(owner, repo, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo'
@@ -714,7 +1162,15 @@ gh_repos_patch_by_repo <- function(owner, repo, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_assignees <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/assignees'
@@ -728,7 +1184,15 @@ gh_repos_get_assignees <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param assignee Login of the assignee.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_assignees_by_assignee <- function(owner, repo, assignee, ...){
   endpoint = 'GET /repos/:owner/:repo/assignees/:assignee'
@@ -741,7 +1205,15 @@ gh_repos_get_assignees_by_assignee <- function(owner, repo, assignee, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_branches <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/branches'
@@ -755,7 +1227,15 @@ gh_repos_get_branches <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param branch Name of the branch.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_branches_by_branch <- function(owner, repo, branch, ...){
   endpoint = 'GET /repos/:owner/:repo/branches/:branch'
@@ -771,7 +1251,15 @@ gh_repos_get_branches_by_branch <- function(owner, repo, branch, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_collaborators <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/collaborators'
@@ -785,7 +1273,15 @@ gh_repos_get_collaborators <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param user Login of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_collaborators_by_user <- function(owner, repo, user, ...){
   endpoint = 'DELETE /repos/:owner/:repo/collaborators/:user'
@@ -799,7 +1295,15 @@ gh_repos_delete_collaborators_by_user <- function(owner, repo, user, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param user Login of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_collaborators_by_user <- function(owner, repo, user, ...){
   endpoint = 'GET /repos/:owner/:repo/collaborators/:user'
@@ -813,7 +1317,15 @@ gh_repos_get_collaborators_by_user <- function(owner, repo, user, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param user Login of the user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_put_collaborators_by_user <- function(owner, repo, user, ...){
   endpoint = 'PUT /repos/:owner/:repo/collaborators/:user'
@@ -826,7 +1338,15 @@ gh_repos_put_collaborators_by_user <- function(owner, repo, user, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_comments <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/comments'
@@ -840,7 +1360,15 @@ gh_repos_get_comments <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param commentId Id of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_comments_by_comment_id <- function(owner, repo, commentId, ...){
   endpoint = 'DELETE /repos/:owner/:repo/comments/:commentId'
@@ -854,7 +1382,15 @@ gh_repos_delete_comments_by_comment_id <- function(owner, repo, commentId, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param commentId Id of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_comments_by_comment_id <- function(owner, repo, commentId, ...){
   endpoint = 'GET /repos/:owner/:repo/comments/:commentId'
@@ -869,7 +1405,15 @@ gh_repos_get_comments_by_comment_id <- function(owner, repo, commentId, ...){
 #' @param repo Name of repository.
 #' @param commentId Id of comment.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_comments_by_comment_id <- function(owner, repo, commentId, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/comments/:commentId'
@@ -882,7 +1426,15 @@ gh_repos_patch_comments_by_comment_id <- function(owner, repo, commentId, body, 
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_commits <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/commits'
@@ -900,7 +1452,15 @@ gh_repos_get_commits <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param ref ref
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_commits_status <- function(owner, repo, ref, ...){
   endpoint = 'GET /repos/:owner/:repo/commits/:ref/status'
@@ -914,7 +1474,15 @@ gh_repos_get_commits_status <- function(owner, repo, ref, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param shaCode SHA-1 code of the commit.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_commits_by_sha_code <- function(owner, repo, shaCode, ...){
   endpoint = 'GET /repos/:owner/:repo/commits/:shaCode'
@@ -928,7 +1496,15 @@ gh_repos_get_commits_by_sha_code <- function(owner, repo, shaCode, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param shaCode SHA-1 code of the commit.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_commits_comments <- function(owner, repo, shaCode, ...){
   endpoint = 'GET /repos/:owner/:repo/commits/:shaCode/comments'
@@ -943,7 +1519,15 @@ gh_repos_get_commits_comments <- function(owner, repo, shaCode, ...){
 #' @param repo Name of repository.
 #' @param shaCode SHA-1 code of the commit.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_commits_comments <- function(owner, repo, shaCode, body, ...){
   endpoint = 'POST /repos/:owner/:repo/commits/:shaCode/comments'
@@ -958,7 +1542,15 @@ gh_repos_post_commits_comments <- function(owner, repo, shaCode, body, ...){
 #' @param repo Name of repository.
 #' @param baseId baseId
 #' @param headId headId
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_compare_by_base_id_head_id <- function(owner, repo, baseId, headId, ...){
   endpoint = 'GET /repos/:owner/:repo/compare/:baseId...:headId'
@@ -973,7 +1565,15 @@ gh_repos_get_compare_by_base_id_head_id <- function(owner, repo, baseId, headId,
 #' @param repo Name of repository.
 #' @param path path
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_contents_by_path <- function(owner, repo, path, body, ...){
   endpoint = 'DELETE /repos/:owner/:repo/contents/:path'
@@ -991,7 +1591,15 @@ gh_repos_delete_contents_by_path <- function(owner, repo, path, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param path path
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_contents_by_path <- function(owner, repo, path, ...){
   endpoint = 'GET /repos/:owner/:repo/contents/:path'
@@ -1006,7 +1614,15 @@ gh_repos_get_contents_by_path <- function(owner, repo, path, ...){
 #' @param repo Name of repository.
 #' @param path path
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_put_contents_by_path <- function(owner, repo, path, body, ...){
   endpoint = 'PUT /repos/:owner/:repo/contents/:path'
@@ -1020,7 +1636,15 @@ gh_repos_put_contents_by_path <- function(owner, repo, path, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param anon Set to 1 or true to include anonymous contributors in results.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_contributors <- function(owner, repo, anon, ...){
   endpoint = 'GET /repos/:owner/:repo/contributors'
@@ -1033,7 +1657,15 @@ gh_repos_get_contributors <- function(owner, repo, anon, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_deployments <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/deployments'
@@ -1047,7 +1679,15 @@ gh_repos_get_deployments <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_deployments <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/deployments'
@@ -1061,7 +1701,15 @@ gh_repos_post_deployments <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param id The Deployment ID to list the statuses from.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_deployments_statuses <- function(owner, repo, id, ...){
   endpoint = 'GET /repos/:owner/:repo/deployments/:id/statuses'
@@ -1076,7 +1724,15 @@ gh_repos_get_deployments_statuses <- function(owner, repo, id, ...){
 #' @param repo Name of repository.
 #' @param id The Deployment ID to list the statuses from.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_deployments_statuses <- function(owner, repo, id, body, ...){
   endpoint = 'POST /repos/:owner/:repo/deployments/:id/statuses'
@@ -1089,7 +1745,15 @@ gh_repos_post_deployments_statuses <- function(owner, repo, id, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_downloads <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/downloads'
@@ -1103,7 +1767,15 @@ gh_repos_get_downloads <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param downloadId Id of download.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_downloads_by_download_id <- function(owner, repo, downloadId, ...){
   endpoint = 'DELETE /repos/:owner/:repo/downloads/:downloadId'
@@ -1117,7 +1789,15 @@ gh_repos_delete_downloads_by_download_id <- function(owner, repo, downloadId, ..
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param downloadId Id of download.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_downloads_by_download_id <- function(owner, repo, downloadId, ...){
   endpoint = 'GET /repos/:owner/:repo/downloads/:downloadId'
@@ -1130,7 +1810,15 @@ gh_repos_get_downloads_by_download_id <- function(owner, repo, downloadId, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_events <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/events'
@@ -1143,7 +1831,15 @@ gh_repos_get_events <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_forks <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/forks'
@@ -1159,7 +1855,15 @@ gh_repos_get_forks <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_forks <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/forks'
@@ -1173,7 +1877,15 @@ gh_repos_post_forks <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_git_blobs <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/git/blobs'
@@ -1190,7 +1902,15 @@ gh_repos_post_git_blobs <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param shaCode SHA-1 code.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_git_blobs_by_sha_code <- function(owner, repo, shaCode, ...){
   endpoint = 'GET /repos/:owner/:repo/git/blobs/:shaCode'
@@ -1204,7 +1924,15 @@ gh_repos_get_git_blobs_by_sha_code <- function(owner, repo, shaCode, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_git_commits <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/git/commits'
@@ -1218,7 +1946,15 @@ gh_repos_post_git_commits <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param shaCode SHA-1 code.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_git_commits_by_sha_code <- function(owner, repo, shaCode, ...){
   endpoint = 'GET /repos/:owner/:repo/git/commits/:shaCode'
@@ -1231,7 +1967,15 @@ gh_repos_get_git_commits_by_sha_code <- function(owner, repo, shaCode, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_git_refs <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/git/refs'
@@ -1245,7 +1989,15 @@ gh_repos_get_git_refs <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_git_refs <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/git/refs'
@@ -1261,7 +2013,15 @@ gh_repos_post_git_refs <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param ref ref
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_git_refs_by_ref <- function(owner, repo, ref, ...){
   endpoint = 'DELETE /repos/:owner/:repo/git/refs/:ref'
@@ -1275,7 +2035,15 @@ gh_repos_delete_git_refs_by_ref <- function(owner, repo, ref, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param ref ref
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_git_refs_by_ref <- function(owner, repo, ref, ...){
   endpoint = 'GET /repos/:owner/:repo/git/refs/:ref'
@@ -1290,7 +2058,15 @@ gh_repos_get_git_refs_by_ref <- function(owner, repo, ref, ...){
 #' @param repo Name of repository.
 #' @param ref ref
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_git_refs_by_ref <- function(owner, repo, ref, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/git/refs/:ref'
@@ -1308,7 +2084,15 @@ gh_repos_patch_git_refs_by_ref <- function(owner, repo, ref, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_git_tags <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/git/tags'
@@ -1322,7 +2106,15 @@ gh_repos_post_git_tags <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param shaCode shaCode
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_git_tags_by_sha_code <- function(owner, repo, shaCode, ...){
   endpoint = 'GET /repos/:owner/:repo/git/tags/:shaCode'
@@ -1338,7 +2130,15 @@ gh_repos_get_git_tags_by_sha_code <- function(owner, repo, shaCode, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_git_trees <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/git/trees'
@@ -1352,7 +2152,15 @@ gh_repos_post_git_trees <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param shaCode Tree SHA.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_git_trees_by_sha_code <- function(owner, repo, shaCode, ...){
   endpoint = 'GET /repos/:owner/:repo/git/trees/:shaCode'
@@ -1365,7 +2173,15 @@ gh_repos_get_git_trees_by_sha_code <- function(owner, repo, shaCode, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_hooks <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/hooks'
@@ -1379,7 +2195,15 @@ gh_repos_get_hooks <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_hooks <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/hooks'
@@ -1393,7 +2217,15 @@ gh_repos_post_hooks <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param hookId Id of hook.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_hooks_by_hook_id <- function(owner, repo, hookId, ...){
   endpoint = 'DELETE /repos/:owner/:repo/hooks/:hookId'
@@ -1407,7 +2239,15 @@ gh_repos_delete_hooks_by_hook_id <- function(owner, repo, hookId, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param hookId Id of hook.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_hooks_by_hook_id <- function(owner, repo, hookId, ...){
   endpoint = 'GET /repos/:owner/:repo/hooks/:hookId'
@@ -1422,7 +2262,15 @@ gh_repos_get_hooks_by_hook_id <- function(owner, repo, hookId, ...){
 #' @param repo Name of repository.
 #' @param hookId Id of hook.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_hooks_by_hook_id <- function(owner, repo, hookId, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/hooks/:hookId'
@@ -1439,7 +2287,15 @@ gh_repos_patch_hooks_by_hook_id <- function(owner, repo, hookId, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param hookId Id of hook.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_hooks_tests <- function(owner, repo, hookId, ...){
   endpoint = 'POST /repos/:owner/:repo/hooks/:hookId/tests'
@@ -1458,7 +2314,15 @@ gh_repos_post_hooks_tests <- function(owner, repo, hookId, ...){
 #' @param labels String list of comma separated Label names. Example - bug,ui,@@high.
 #' @param sort sort
 #' @param direction direction
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues <- function(owner, repo, filter, state, labels, sort, direction, ...){
   endpoint = 'GET /repos/:owner/:repo/issues'
@@ -1472,7 +2336,15 @@ gh_repos_get_issues <- function(owner, repo, filter, state, labels, sort, direct
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_issues <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/issues'
@@ -1485,7 +2357,15 @@ gh_repos_post_issues <- function(owner, repo, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_comments <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/comments'
@@ -1499,7 +2379,15 @@ gh_repos_get_issues_comments <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param commentId ID of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_issues_comments_by_comment_id <- function(owner, repo, commentId, ...){
   endpoint = 'DELETE /repos/:owner/:repo/issues/comments/:commentId'
@@ -1513,7 +2401,15 @@ gh_repos_delete_issues_comments_by_comment_id <- function(owner, repo, commentId
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param commentId ID of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_comments_by_comment_id <- function(owner, repo, commentId, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/comments/:commentId'
@@ -1528,7 +2424,15 @@ gh_repos_get_issues_comments_by_comment_id <- function(owner, repo, commentId, .
 #' @param repo Name of repository.
 #' @param commentId ID of comment.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_issues_comments_by_comment_id <- function(owner, repo, commentId, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/issues/comments/:commentId'
@@ -1541,7 +2445,15 @@ gh_repos_patch_issues_comments_by_comment_id <- function(owner, repo, commentId,
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_events <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/events'
@@ -1555,7 +2467,15 @@ gh_repos_get_issues_events <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param eventId Id of the event.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_events_by_event_id <- function(owner, repo, eventId, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/events/:eventId'
@@ -1569,7 +2489,15 @@ gh_repos_get_issues_events_by_event_id <- function(owner, repo, eventId, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of issue.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_by_number <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/:number'
@@ -1584,7 +2512,15 @@ gh_repos_get_issues_by_number <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Number of issue.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_issues_by_number <- function(owner, repo, number, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/issues/:number'
@@ -1598,7 +2534,15 @@ gh_repos_patch_issues_by_number <- function(owner, repo, number, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of issue.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_comments <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/:number/comments'
@@ -1613,7 +2557,15 @@ gh_repos_get_issues_comments <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Number of issue.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_issues_comments <- function(owner, repo, number, body, ...){
   endpoint = 'POST /repos/:owner/:repo/issues/:number/comments'
@@ -1627,7 +2579,15 @@ gh_repos_post_issues_comments <- function(owner, repo, number, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of issue.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_events <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/:number/events'
@@ -1641,7 +2601,15 @@ gh_repos_get_issues_events <- function(owner, repo, number, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of issue.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_issues_labels <- function(owner, repo, number, ...){
   endpoint = 'DELETE /repos/:owner/:repo/issues/:number/labels'
@@ -1655,7 +2623,15 @@ gh_repos_delete_issues_labels <- function(owner, repo, number, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of issue.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_issues_labels <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/issues/:number/labels'
@@ -1670,7 +2646,15 @@ gh_repos_get_issues_labels <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Number of issue.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_issues_labels <- function(owner, repo, number, body, ...){
   endpoint = 'POST /repos/:owner/:repo/issues/:number/labels'
@@ -1685,7 +2669,15 @@ gh_repos_post_issues_labels <- function(owner, repo, number, body, ...){
 #' @param repo Name of repository.
 #' @param number Number of issue.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_put_issues_labels <- function(owner, repo, number, body, ...){
   endpoint = 'PUT /repos/:owner/:repo/issues/:number/labels'
@@ -1700,7 +2692,15 @@ gh_repos_put_issues_labels <- function(owner, repo, number, body, ...){
 #' @param repo Name of repository.
 #' @param number Number of issue.
 #' @param name Name of the label.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_issues_labels_by_name <- function(owner, repo, number, name, ...){
   endpoint = 'DELETE /repos/:owner/:repo/issues/:number/labels/:name'
@@ -1713,7 +2713,15 @@ gh_repos_delete_issues_labels_by_name <- function(owner, repo, number, name, ...
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_keys <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/keys'
@@ -1727,7 +2735,15 @@ gh_repos_get_keys <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_keys <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/keys'
@@ -1741,7 +2757,15 @@ gh_repos_post_keys <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param keyId Id of key.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_keys_by_key_id <- function(owner, repo, keyId, ...){
   endpoint = 'DELETE /repos/:owner/:repo/keys/:keyId'
@@ -1755,7 +2779,15 @@ gh_repos_delete_keys_by_key_id <- function(owner, repo, keyId, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param keyId Id of key.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_keys_by_key_id <- function(owner, repo, keyId, ...){
   endpoint = 'GET /repos/:owner/:repo/keys/:keyId'
@@ -1768,7 +2800,15 @@ gh_repos_get_keys_by_key_id <- function(owner, repo, keyId, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_labels <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/labels'
@@ -1782,7 +2822,15 @@ gh_repos_get_labels <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_labels <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/labels'
@@ -1796,7 +2844,15 @@ gh_repos_post_labels <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param name Name of the label.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_labels_by_name <- function(owner, repo, name, ...){
   endpoint = 'DELETE /repos/:owner/:repo/labels/:name'
@@ -1810,7 +2866,15 @@ gh_repos_delete_labels_by_name <- function(owner, repo, name, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param name Name of the label.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_labels_by_name <- function(owner, repo, name, ...){
   endpoint = 'GET /repos/:owner/:repo/labels/:name'
@@ -1825,7 +2889,15 @@ gh_repos_get_labels_by_name <- function(owner, repo, name, ...){
 #' @param repo Name of repository.
 #' @param name Name of the label.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_labels_by_name <- function(owner, repo, name, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/labels/:name'
@@ -1839,7 +2911,15 @@ gh_repos_patch_labels_by_name <- function(owner, repo, name, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_languages <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/languages'
@@ -1853,7 +2933,15 @@ gh_repos_get_languages <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_merges <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/merges'
@@ -1866,7 +2954,15 @@ gh_repos_post_merges <- function(owner, repo, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_milestones <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/milestones'
@@ -1880,7 +2976,15 @@ gh_repos_get_milestones <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_milestones <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/milestones'
@@ -1894,7 +2998,15 @@ gh_repos_post_milestones <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of milestone.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_milestones_by_number <- function(owner, repo, number, ...){
   endpoint = 'DELETE /repos/:owner/:repo/milestones/:number'
@@ -1908,7 +3020,15 @@ gh_repos_delete_milestones_by_number <- function(owner, repo, number, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of milestone.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_milestones_by_number <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/milestones/:number'
@@ -1923,7 +3043,15 @@ gh_repos_get_milestones_by_number <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Number of milestone.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_milestones_by_number <- function(owner, repo, number, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/milestones/:number'
@@ -1937,7 +3065,15 @@ gh_repos_patch_milestones_by_number <- function(owner, repo, number, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Number of milestone.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_milestones_labels <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/milestones/:number/labels'
@@ -1950,7 +3086,15 @@ gh_repos_get_milestones_labels <- function(owner, repo, number, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_notifications <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/notifications'
@@ -1965,7 +3109,15 @@ gh_repos_get_notifications <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_put_notifications <- function(owner, repo, body, ...){
   endpoint = 'PUT /repos/:owner/:repo/notifications'
@@ -1978,7 +3130,15 @@ gh_repos_put_notifications <- function(owner, repo, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls'
@@ -1992,7 +3152,15 @@ gh_repos_get_pulls <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_pulls <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/pulls'
@@ -2005,7 +3173,15 @@ gh_repos_post_pulls <- function(owner, repo, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_comments <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/comments'
@@ -2019,7 +3195,15 @@ gh_repos_get_pulls_comments <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param commentId Id of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_pulls_comments_by_comment_id <- function(owner, repo, commentId, ...){
   endpoint = 'DELETE /repos/:owner/:repo/pulls/comments/:commentId'
@@ -2033,7 +3217,15 @@ gh_repos_delete_pulls_comments_by_comment_id <- function(owner, repo, commentId,
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param commentId Id of comment.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_comments_by_comment_id <- function(owner, repo, commentId, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/comments/:commentId'
@@ -2048,7 +3240,15 @@ gh_repos_get_pulls_comments_by_comment_id <- function(owner, repo, commentId, ..
 #' @param repo Name of repository.
 #' @param commentId Id of comment.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_pulls_comments_by_comment_id <- function(owner, repo, commentId, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/pulls/comments/:commentId'
@@ -2062,7 +3262,15 @@ gh_repos_patch_pulls_comments_by_comment_id <- function(owner, repo, commentId, 
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Id of pull.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_by_number <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/:number'
@@ -2077,7 +3285,15 @@ gh_repos_get_pulls_by_number <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Id of pull.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_pulls_by_number <- function(owner, repo, number, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/pulls/:number'
@@ -2091,7 +3307,15 @@ gh_repos_patch_pulls_by_number <- function(owner, repo, number, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Id of pull.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_comments <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/:number/comments'
@@ -2110,7 +3334,15 @@ gh_repos_get_pulls_comments <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Id of pull.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_pulls_comments <- function(owner, repo, number, body, ...){
   endpoint = 'POST /repos/:owner/:repo/pulls/:number/comments'
@@ -2124,7 +3356,15 @@ gh_repos_post_pulls_comments <- function(owner, repo, number, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Id of pull.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_commits <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/:number/commits'
@@ -2138,7 +3378,15 @@ gh_repos_get_pulls_commits <- function(owner, repo, number, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Id of pull.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_files <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/:number/files'
@@ -2152,7 +3400,15 @@ gh_repos_get_pulls_files <- function(owner, repo, number, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param number Id of pull.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_pulls_merge <- function(owner, repo, number, ...){
   endpoint = 'GET /repos/:owner/:repo/pulls/:number/merge'
@@ -2167,7 +3423,15 @@ gh_repos_get_pulls_merge <- function(owner, repo, number, ...){
 #' @param repo Name of repository.
 #' @param number Id of pull.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_put_pulls_merge <- function(owner, repo, number, body, ...){
   endpoint = 'PUT /repos/:owner/:repo/pulls/:number/merge'
@@ -2180,7 +3444,15 @@ gh_repos_put_pulls_merge <- function(owner, repo, number, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_readme <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/readme'
@@ -2193,7 +3465,15 @@ gh_repos_get_readme <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_releases <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/releases'
@@ -2207,7 +3487,15 @@ gh_repos_get_releases <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_releases <- function(owner, repo, body, ...){
   endpoint = 'POST /repos/:owner/:repo/releases'
@@ -2221,7 +3509,15 @@ gh_repos_post_releases <- function(owner, repo, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param id id
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_releases_assets_by_id <- function(owner, repo, id, ...){
   endpoint = 'DELETE /repos/:owner/:repo/releases/assets/:id'
@@ -2235,7 +3531,15 @@ gh_repos_delete_releases_assets_by_id <- function(owner, repo, id, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param id id
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_releases_assets_by_id <- function(owner, repo, id, ...){
   endpoint = 'GET /repos/:owner/:repo/releases/assets/:id'
@@ -2250,7 +3554,15 @@ gh_repos_get_releases_assets_by_id <- function(owner, repo, id, ...){
 #' @param repo Name of repository.
 #' @param id id
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_releases_assets_by_id <- function(owner, repo, id, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/releases/assets/:id'
@@ -2264,7 +3576,15 @@ gh_repos_patch_releases_assets_by_id <- function(owner, repo, id, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param id id
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_releases_by_id <- function(owner, repo, id, ...){
   endpoint = 'DELETE /repos/:owner/:repo/releases/:id'
@@ -2278,7 +3598,15 @@ gh_repos_delete_releases_by_id <- function(owner, repo, id, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param id id
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_releases_by_id <- function(owner, repo, id, ...){
   endpoint = 'GET /repos/:owner/:repo/releases/:id'
@@ -2293,7 +3621,15 @@ gh_repos_get_releases_by_id <- function(owner, repo, id, ...){
 #' @param repo Name of repository.
 #' @param id id
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_patch_releases_by_id <- function(owner, repo, id, body, ...){
   endpoint = 'PATCH /repos/:owner/:repo/releases/:id'
@@ -2307,7 +3643,15 @@ gh_repos_patch_releases_by_id <- function(owner, repo, id, body, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param id id
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_releases_assets <- function(owner, repo, id, ...){
   endpoint = 'GET /repos/:owner/:repo/releases/:id/assets'
@@ -2320,7 +3664,15 @@ gh_repos_get_releases_assets <- function(owner, repo, id, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_stargazers <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/stargazers'
@@ -2334,7 +3686,15 @@ gh_repos_get_stargazers <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_stats_code_frequency <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/stats/code_frequency'
@@ -2348,7 +3708,15 @@ gh_repos_get_stats_code_frequency <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_stats_commit_activity <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/stats/commit_activity'
@@ -2361,7 +3729,15 @@ gh_repos_get_stats_commit_activity <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_stats_contributors <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/stats/contributors'
@@ -2374,7 +3750,15 @@ gh_repos_get_stats_contributors <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_stats_participation <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/stats/participation'
@@ -2392,7 +3776,15 @@ gh_repos_get_stats_participation <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_stats_punch_card <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/stats/punch_card'
@@ -2407,7 +3799,15 @@ gh_repos_get_stats_punch_card <- function(owner, repo, ...){
 #' @param repo Name of repository.
 #' @param ref Ref to list the statuses from. It can be a SHA, a branch name, or a tag
 #' name.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_statuses_by_ref <- function(owner, repo, ref, ...){
   endpoint = 'GET /repos/:owner/:repo/statuses/:ref'
@@ -2423,7 +3823,15 @@ gh_repos_get_statuses_by_ref <- function(owner, repo, ref, ...){
 #' @param ref Ref to list the statuses from. It can be a SHA, a branch name, or a tag
 #' name.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_post_statuses_by_ref <- function(owner, repo, ref, body, ...){
   endpoint = 'POST /repos/:owner/:repo/statuses/:ref'
@@ -2436,7 +3844,15 @@ gh_repos_post_statuses_by_ref <- function(owner, repo, ref, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_subscribers <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/subscribers'
@@ -2449,7 +3865,15 @@ gh_repos_get_subscribers <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_delete_subscription <- function(owner, repo, ...){
   endpoint = 'DELETE /repos/:owner/:repo/subscription'
@@ -2462,7 +3886,15 @@ gh_repos_delete_subscription <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_subscription <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/subscription'
@@ -2476,7 +3908,15 @@ gh_repos_get_subscription <- function(owner, repo, ...){
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_put_subscription <- function(owner, repo, body, ...){
   endpoint = 'PUT /repos/:owner/:repo/subscription'
@@ -2489,7 +3929,15 @@ gh_repos_put_subscription <- function(owner, repo, body, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_tags <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/tags'
@@ -2502,7 +3950,15 @@ gh_repos_get_tags <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_teams <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/teams'
@@ -2515,7 +3971,15 @@ gh_repos_get_teams <- function(owner, repo, ...){
 #'
 #' @param owner Name of repository owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_watchers <- function(owner, repo, ...){
   endpoint = 'GET /repos/:owner/:repo/watchers'
@@ -2534,7 +3998,15 @@ gh_repos_get_watchers <- function(owner, repo, ...){
 #' @param repo Name of repository.
 #' @param archive_format archive_format
 #' @param path Valid Git reference, defaults to 'master'.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repos_get_by_path <- function(owner, repo, archive_format, path, ...){
   endpoint = 'GET /repos/:owner/:repo/:archive_format/:path'
@@ -2547,7 +4019,15 @@ gh_repos_get_by_path <- function(owner, repo, archive_format, path, ...){
 #' created. Note: Pagination is powered exclusively by the since parameter. is the
 #' Link header to get the URL for the next page of repositories.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_repositories_get <- function(...){
   endpoint = 'GET /repositories'
@@ -2567,7 +4047,15 @@ gh_repositories_get <- function(...){
 #' files that match a certain size (in bytes). 'Path' Specifies the path that the
 #' resulting file must be at. 'Extension' Matches files with a certain extension.
 #' 'Users' or 'Repositories' Limits searches to a specific user or repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_search_get_code <- function(q, ...){
   endpoint = 'GET /search/code'
@@ -2580,7 +4068,15 @@ gh_search_get_code <- function(q, ...){
 #'
 #' @param q The q search term can also contain any combination of the supported issue
 #' search qualifiers:
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_search_get_issues <- function(q, ...){
   endpoint = 'GET /search/issues'
@@ -2602,7 +4098,15 @@ gh_search_get_issues <- function(q, ...){
 #' searches to a specific user or repository. 'Languages' Searches repositories
 #' based on the language they are written in. 'Stars' Searches repositories based
 #' on the number of stars.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_search_get_repositories <- function(q, ...){
   endpoint = 'GET /search/repositories'
@@ -2622,7 +4126,15 @@ gh_search_get_repositories <- function(q, ...){
 #' repositories that match a certain language. 'Created' Filter users based on
 #' when they joined. 'Followers' Filter users based on the number of followers
 #' they have.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_search_get_users <- function(q, ...){
   endpoint = 'GET /search/users'
@@ -2635,7 +4147,15 @@ gh_search_get_users <- function(q, ...){
 #' that the team is associated with.
 #'
 #' @param teamId Id of team.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_delete_by_team_id <- function(teamId, ...){
   endpoint = 'DELETE /teams/:teamId'
@@ -2647,7 +4167,15 @@ gh_teams_delete_by_team_id <- function(teamId, ...){
 #' 
 #'
 #' @param teamId Id of team.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_get_by_team_id <- function(teamId, ...){
   endpoint = 'GET /teams/:teamId'
@@ -2661,7 +4189,15 @@ gh_teams_get_by_team_id <- function(teamId, ...){
 #'
 #' @param teamId Id of team.
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_patch_by_team_id <- function(teamId, body, ...){
   endpoint = 'PATCH /teams/:teamId'
@@ -2674,7 +4210,15 @@ gh_teams_patch_by_team_id <- function(teamId, body, ...){
 #' the team.
 #'
 #' @param teamId Id of team.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_get_members <- function(teamId, ...){
   endpoint = 'GET /teams/:teamId/members'
@@ -2690,7 +4234,15 @@ gh_teams_get_members <- function(teamId, ...){
 #'
 #' @param teamId Id of team.
 #' @param username Name of a member.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_delete_members_by_username <- function(teamId, username, ...){
   endpoint = 'DELETE /teams/:teamId/members/:username'
@@ -2704,7 +4256,15 @@ gh_teams_delete_members_by_username <- function(teamId, username, ...){
 #'
 #' @param teamId Id of team.
 #' @param username Name of a member.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_get_members_by_username <- function(teamId, username, ...){
   endpoint = 'GET /teams/:teamId/members/:username'
@@ -2719,7 +4279,15 @@ gh_teams_get_members_by_username <- function(teamId, username, ...){
 #'
 #' @param teamId Id of team.
 #' @param username Name of a member.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_put_members_by_username <- function(teamId, username, ...){
   endpoint = 'PUT /teams/:teamId/members/:username'
@@ -2735,7 +4303,15 @@ gh_teams_put_members_by_username <- function(teamId, username, ...){
 #'
 #' @param teamId Id of team.
 #' @param username Name of a member.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_delete_memberships_by_username <- function(teamId, username, ...){
   endpoint = 'DELETE /teams/:teamId/memberships/:username'
@@ -2749,7 +4325,15 @@ gh_teams_delete_memberships_by_username <- function(teamId, username, ...){
 #'
 #' @param teamId Id of team.
 #' @param username Name of a member.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_get_memberships_by_username <- function(teamId, username, ...){
   endpoint = 'GET /teams/:teamId/memberships/:username'
@@ -2775,7 +4359,15 @@ gh_teams_get_memberships_by_username <- function(teamId, username, ...){
 #'
 #' @param teamId Id of team.
 #' @param username Name of a member.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_put_memberships_by_username <- function(teamId, username, ...){
   endpoint = 'PUT /teams/:teamId/memberships/:username'
@@ -2787,7 +4379,15 @@ gh_teams_put_memberships_by_username <- function(teamId, username, ...){
 #' 
 #'
 #' @param teamId Id of team.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_get_repos <- function(teamId, ...){
   endpoint = 'GET /teams/:teamId/repos'
@@ -2801,7 +4401,15 @@ gh_teams_get_repos <- function(teamId, ...){
 #' @param teamId Id of team.
 #' @param owner Name of a repository owner.
 #' @param repo Name of a repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_delete_repos_by_repo <- function(teamId, owner, repo, ...){
   endpoint = 'DELETE /teams/:teamId/repos/:owner/:repo'
@@ -2815,7 +4423,15 @@ gh_teams_delete_repos_by_repo <- function(teamId, owner, repo, ...){
 #' @param teamId Id of team.
 #' @param owner Name of a repository owner.
 #' @param repo Name of a repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_get_repos_by_repo <- function(teamId, owner, repo, ...){
   endpoint = 'GET /teams/:teamId/repos/:owner/:repo'
@@ -2829,7 +4445,15 @@ gh_teams_get_repos_by_repo <- function(teamId, owner, repo, ...){
 #' @param teamId Id of team.
 #' @param owner Name of a organization.
 #' @param repo Name of a repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_teams_put_repos_by_repo <- function(teamId, owner, repo, ...){
   endpoint = 'PUT /teams/:teamId/repos/:owner/:repo'
@@ -2840,7 +4464,15 @@ gh_teams_put_repos_by_repo <- function(teamId, owner, repo, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get <- function(...){
   endpoint = 'GET /user'
@@ -2852,7 +4484,15 @@ gh_user_get <- function(...){
 #' 
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_patch <- function(body, ...){
   endpoint = 'PATCH /user'
@@ -2864,7 +4504,15 @@ gh_user_patch <- function(body, ...){
 #' You can include a single email address or an array of addresses.
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_delete_emails <- function(body, ...){
   endpoint = 'DELETE /user/emails'
@@ -2879,7 +4527,15 @@ gh_user_delete_emails <- function(body, ...){
 #' finalized, use the application/vnd.github.v3 media type to get other response
 #' format.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_emails <- function(...){
   endpoint = 'GET /user/emails'
@@ -2891,7 +4547,15 @@ gh_user_get_emails <- function(...){
 #' You can post a single email address or an array of addresses.
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_post_emails <- function(body, ...){
   endpoint = 'POST /user/emails'
@@ -2902,7 +4566,15 @@ gh_user_post_emails <- function(body, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_followers <- function(...){
   endpoint = 'GET /user/followers'
@@ -2913,7 +4585,15 @@ gh_user_get_followers <- function(...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_following <- function(...){
   endpoint = 'GET /user/following'
@@ -2926,7 +4606,15 @@ gh_user_get_following <- function(...){
 #' basic auth or OAuth with the user:follow scope.
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_delete_following_by_username <- function(username, ...){
   endpoint = 'DELETE /user/following/:username'
@@ -2938,7 +4626,15 @@ gh_user_delete_following_by_username <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_following_by_username <- function(username, ...){
   endpoint = 'GET /user/following/:username'
@@ -2951,7 +4647,15 @@ gh_user_get_following_by_username <- function(username, ...){
 #' auth or OAuth with the user:follow scope.
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_put_following_by_username <- function(username, ...){
   endpoint = 'PUT /user/following/:username'
@@ -2969,7 +4673,15 @@ gh_user_put_following_by_username <- function(username, ...){
 #' @param labels String list of comma separated Label names. Example - bug,ui,@@high.
 #' @param sort sort
 #' @param direction direction
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_issues <- function(filter, state, labels, sort, direction, ...){
   endpoint = 'GET /user/issues'
@@ -2982,7 +4694,15 @@ gh_user_get_issues <- function(filter, state, labels, sort, direction, ...){
 #' that you are authenticated through basic auth, or OAuth with the 'user',
 #' 'write:public_key' scopes.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_keys <- function(...){
   endpoint = 'GET /user/keys'
@@ -2994,7 +4714,15 @@ gh_user_get_keys <- function(...){
 #' 
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_post_keys <- function(body, ...){
   endpoint = 'POST /user/keys'
@@ -3006,7 +4734,15 @@ gh_user_post_keys <- function(body, ...){
 #' 
 #'
 #' @param keyId ID of key.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_delete_keys_by_key_id <- function(keyId, ...){
   endpoint = 'DELETE /user/keys/:keyId'
@@ -3018,7 +4754,15 @@ gh_user_delete_keys_by_key_id <- function(keyId, ...){
 #' 
 #'
 #' @param keyId ID of key.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_keys_by_key_id <- function(keyId, ...){
   endpoint = 'GET /user/keys/:keyId'
@@ -3029,7 +4773,15 @@ gh_user_get_keys_by_key_id <- function(keyId, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_orgs <- function(...){
   endpoint = 'GET /user/orgs'
@@ -3041,7 +4793,15 @@ gh_user_get_orgs <- function(...){
 #' repositories owned by organizations which the user can access. You can lis user
 #' organizations and list organization repositories separately.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_repos <- function(...){
   endpoint = 'GET /user/repos'
@@ -3053,7 +4813,15 @@ gh_user_get_repos <- function(...){
 #' repo scope.
 #'
 #' @param body body
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_post_repos <- function(body, ...){
   endpoint = 'POST /user/repos'
@@ -3064,7 +4832,15 @@ gh_user_post_repos <- function(body, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_starred <- function(...){
   endpoint = 'GET /user/starred'
@@ -3077,7 +4853,15 @@ gh_user_get_starred <- function(...){
 #'
 #' @param owner Name of a repository owner.
 #' @param repo Name of a repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_delete_starred_by_repo <- function(owner, repo, ...){
   endpoint = 'DELETE /user/starred/:owner/:repo'
@@ -3090,7 +4874,15 @@ gh_user_delete_starred_by_repo <- function(owner, repo, ...){
 #'
 #' @param owner Name of a repository owner.
 #' @param repo Name of a repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_starred_by_repo <- function(owner, repo, ...){
   endpoint = 'GET /user/starred/:owner/:repo'
@@ -3103,7 +4895,15 @@ gh_user_get_starred_by_repo <- function(owner, repo, ...){
 #'
 #' @param owner Name of a repository owner.
 #' @param repo Name of a repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_put_starred_by_repo <- function(owner, repo, ...){
   endpoint = 'PUT /user/starred/:owner/:repo'
@@ -3114,7 +4914,15 @@ gh_user_put_starred_by_repo <- function(owner, repo, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_subscriptions <- function(...){
   endpoint = 'GET /user/subscriptions'
@@ -3127,7 +4935,15 @@ gh_user_get_subscriptions <- function(...){
 #'
 #' @param owner Name of the owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_delete_subscriptions_by_repo <- function(owner, repo, ...){
   endpoint = 'DELETE /user/subscriptions/:owner/:repo'
@@ -3140,7 +4956,15 @@ gh_user_delete_subscriptions_by_repo <- function(owner, repo, ...){
 #'
 #' @param owner Name of the owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_subscriptions_by_repo <- function(owner, repo, ...){
   endpoint = 'GET /user/subscriptions/:owner/:repo'
@@ -3153,7 +4977,15 @@ gh_user_get_subscriptions_by_repo <- function(owner, repo, ...){
 #'
 #' @param owner Name of the owner.
 #' @param repo Name of repository.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_put_subscriptions_by_repo <- function(owner, repo, ...){
   endpoint = 'PUT /user/subscriptions/:owner/:repo'
@@ -3164,7 +4996,15 @@ gh_user_put_subscriptions_by_repo <- function(owner, repo, ...){
 #' 
 #' 
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_user_get_teams <- function(...){
   endpoint = 'GET /user/teams'
@@ -3177,7 +5017,15 @@ gh_user_get_teams <- function(...){
 #' GitHub. Note: Pagination is powered exclusively by the since parameter. Use the
 #' Link header to get the URL for the next page of users.
 #'
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get <- function(...){
   endpoint = 'GET /users'
@@ -3189,7 +5037,15 @@ gh_users_get <- function(...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_by_username <- function(username, ...){
   endpoint = 'GET /users/:username'
@@ -3201,7 +5057,15 @@ gh_users_get_by_username <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_events <- function(username, ...){
   endpoint = 'GET /users/:username/events'
@@ -3214,7 +5078,15 @@ gh_users_get_events <- function(username, ...){
 #'
 #' @param username Name of user.
 #' @param org org
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_events_orgs_by_org <- function(username, org, ...){
   endpoint = 'GET /users/:username/events/orgs/:org'
@@ -3226,7 +5098,15 @@ gh_users_get_events_orgs_by_org <- function(username, org, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_followers <- function(username, ...){
   endpoint = 'GET /users/:username/followers'
@@ -3239,7 +5119,15 @@ gh_users_get_followers <- function(username, ...){
 #'
 #' @param username Name of user.
 #' @param targetUser Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_following_by_target_user <- function(username, targetUser, ...){
   endpoint = 'GET /users/:username/following/:targetUser'
@@ -3251,7 +5139,15 @@ gh_users_get_following_by_target_user <- function(username, targetUser, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_gists <- function(username, ...){
   endpoint = 'GET /users/:username/gists'
@@ -3263,7 +5159,15 @@ gh_users_get_gists <- function(username, ...){
 #' Lists the verified public keys for a user. This is accessible by anyone.
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_keys <- function(username, ...){
   endpoint = 'GET /users/:username/keys'
@@ -3275,7 +5179,15 @@ gh_users_get_keys <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_orgs <- function(username, ...){
   endpoint = 'GET /users/:username/orgs'
@@ -3287,7 +5199,15 @@ gh_users_get_orgs <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_received_events <- function(username, ...){
   endpoint = 'GET /users/:username/received_events'
@@ -3299,7 +5219,15 @@ gh_users_get_received_events <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_received_events_public <- function(username, ...){
   endpoint = 'GET /users/:username/received_events/public'
@@ -3311,7 +5239,15 @@ gh_users_get_received_events_public <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_repos <- function(username, ...){
   endpoint = 'GET /users/:username/repos'
@@ -3323,7 +5259,15 @@ gh_users_get_repos <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_starred <- function(username, ...){
   endpoint = 'GET /users/:username/starred'
@@ -3335,7 +5279,15 @@ gh_users_get_starred <- function(username, ...){
 #' 
 #'
 #' @param username Name of user.
-#' @param ... Additional parameters to pass to gh::gh. 
+#' @param ... Additional parameters to pass to \code{\link[gh]{gh}}. See details. 
+#' @details
+#' Additional parameters that can be passed:
+#' \describe{
+#' \item{type}{ It takes values in: all, public, private, forks, sources, member.
+#' The default is: all}
+#' \item{Accept}{Is used to set specified media type.  }
+#' }
+
 #' @export
 gh_users_get_subscriptions <- function(username, ...){
   endpoint = 'GET /users/:username/subscriptions'

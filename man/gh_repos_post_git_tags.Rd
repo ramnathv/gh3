@@ -13,7 +13,7 @@ gh_repos_post_git_tags(owner, repo, body, ...)
 
 \item{body}{body}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 Note that creating a tag object does not create the reference that makes a tag
@@ -21,4 +21,12 @@ in Git. If you want to create an annotated tag in Git, you have to do this call
 to create the tag object, and then create the refs/tags/\link{tag} reference. If you
 want to create a lightweight tag, you only have to create the tag reference -
 this call would be unnecessary.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

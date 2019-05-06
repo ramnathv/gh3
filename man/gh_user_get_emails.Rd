@@ -7,7 +7,7 @@
 gh_user_get_emails(...)
 }
 \arguments{
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 In the final version of the API, this method will return an array of hashes
@@ -15,4 +15,12 @@ with extended information for each email address indicating if the address has
 been verified and if it's primary email address for GitHub. Until API v3 is
 finalized, use the application/vnd.github.v3 media type to get other response
 format.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

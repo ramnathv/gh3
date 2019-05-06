@@ -7,10 +7,18 @@
 gh_repositories_get(...)
 }
 \arguments{
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 This provides a dump of every public repository, in the order that they were
 created. Note: Pagination is powered exclusively by the since parameter. is the
 Link header to get the URL for the next page of repositories.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }

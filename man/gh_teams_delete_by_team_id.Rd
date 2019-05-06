@@ -9,9 +9,17 @@ gh_teams_delete_by_team_id(teamId, ...)
 \arguments{
 \item{teamId}{Id of team.}
 
-\item{...}{Additional parameters to pass to gh::gh.}
+\item{...}{Additional parameters to pass to \code{\link[gh]{gh}}. See details.}
 }
 \description{
 In order to delete a team, the authenticated user must be an owner of the org
 that the team is associated with.
+}
+\details{
+Additional parameters that can be passed:
+\describe{
+\item{type}{ It takes values in: all, public, private, forks, sources, member.
+The default is: all}
+\item{Accept}{Is used to set specified media type.  }
+}
 }
